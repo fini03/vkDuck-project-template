@@ -39,4 +39,8 @@
 !/data/models/.gitkeep
 /data/images/*
 !/data/images/.gitkeep
+!/data/images/default.png
 /data/meshes/*
+
+/saved_state/*
+!/saved_state/.gitkeep
