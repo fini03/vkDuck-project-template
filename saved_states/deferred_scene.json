@@ -1,0 +1,557 @@
+{
+    "links": [
+        {
+            "endPin": 23,
+            "id": 24,
+            "startPin": 20
+        },
+        {
+            "endPin": 76,
+            "id": 84,
+            "startPin": 61
+        },
+        {
+            "endPin": 17,
+            "id": 116,
+            "startPin": 113
+        },
+        {
+            "endPin": 18,
+            "id": 117,
+            "startPin": 114
+        },
+        {
+            "endPin": 19,
+            "id": 118,
+            "startPin": 115
+        },
+        {
+            "endPin": 8,
+            "id": 119,
+            "startPin": 4
+        },
+        {
+            "endPin": 111,
+            "id": 120,
+            "startPin": 2
+        },
+        {
+            "endPin": 112,
+            "id": 121,
+            "startPin": 3
+        },
+        {
+            "endPin": 90,
+            "id": 122,
+            "startPin": 35
+        },
+        {
+            "endPin": 97,
+            "id": 123,
+            "startPin": 35
+        }
+    ],
+    "nodes": [
+        {
+            "id": 1,
+            "name": "Model",
+            "outputPins": [
+                {
+                    "id": 2,
+                    "label": "Model matrix",
+                    "type": 0
+                },
+                {
+                    "id": 3,
+                    "label": "Image",
+                    "type": 1
+                },
+                {
+                    "id": 4,
+                    "label": "Vertex data",
+                    "type": 2
+                },
+                {
+                    "id": 5,
+                    "label": "Camera",
+                    "type": 0
+                }
+            ],
+            "position": [
+                32.0,
+                359.0
+            ],
+            "selectedCameraIndex": 0,
+            "settings": {
+                "modelPath": "data/models/NewSponza_Main_glTF_003.gltf",
+                "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "primitiveRestart": false,
+                "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "topology": 3
+            },
+            "type": "model"
+        },
+        {
+            "attachmentConfigs": [
+                {
+                    "clearValue": {
+                        "color": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    "colorBlending": {
+                        "alphaBlendOp": 0,
+                        "blendEnable": false,
+                        "colorBlendOp": 0,
+                        "colorWriteMask": 15,
+                        "dstAlphaBlendFactor": 0,
+                        "dstColorBlendFactor": 7,
+                        "srcAlphaBlendFactor": 1,
+                        "srcColorBlendFactor": 6
+                    },
+                    "format": 97,
+                    "name": "Position",
+                    "semantic": "POSITION"
+                },
+                {
+                    "clearValue": {
+                        "color": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    "colorBlending": {
+                        "alphaBlendOp": 0,
+                        "blendEnable": false,
+                        "colorBlendOp": 0,
+                        "colorWriteMask": 15,
+                        "dstAlphaBlendFactor": 0,
+                        "dstColorBlendFactor": 7,
+                        "srcAlphaBlendFactor": 1,
+                        "srcColorBlendFactor": 6
+                    },
+                    "format": 97,
+                    "name": "Normal",
+                    "semantic": "NORMAL"
+                },
+                {
+                    "clearValue": {
+                        "color": [
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0
+                        ]
+                    },
+                    "colorBlending": {
+                        "alphaBlendOp": 0,
+                        "blendEnable": false,
+                        "colorBlendOp": 0,
+                        "colorWriteMask": 15,
+                        "dstAlphaBlendFactor": 0,
+                        "dstColorBlendFactor": 7,
+                        "srcAlphaBlendFactor": 1,
+                        "srcColorBlendFactor": 6
+                    },
+                    "format": 37,
+                    "name": "Albedo",
+                    "semantic": "COLOR"
+                }
+            ],
+            "extraPins": [
+                {
+                    "id": 8,
+                    "label": "Vertex data",
+                    "pinKind": "vertexData",
+                    "type": 2
+                },
+                {
+                    "id": 90,
+                    "label": "camera",
+                    "pinKind": "cameraInput",
+                    "type": 0
+                }
+            ],
+            "id": 6,
+            "inputPins": [
+                {
+                    "id": 0,
+                    "label": "",
+                    "type": 1634692198
+                },
+                {
+                    "id": 111,
+                    "label": "objectUbo",
+                    "type": 0
+                },
+                {
+                    "id": 112,
+                    "label": "samplerColor",
+                    "type": 1
+                }
+            ],
+            "isMainPipeline": false,
+            "name": "offscreen",
+            "outputPins": [
+                {
+                    "id": 113,
+                    "label": "Position",
+                    "type": 1
+                },
+                {
+                    "id": 114,
+                    "label": "Normal",
+                    "type": 1
+                },
+                {
+                    "id": 115,
+                    "label": "Albedo",
+                    "type": 1
+                }
+            ],
+            "position": [
+                360.0,
+                468.0
+            ],
+            "settings": {
+                "blendConstants": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "compiledFragmentShaderPath": "shaders/deferred_offscreen.spv",
+                "compiledVertexShaderPath": "shaders/deferred_offscreen.spv",
+                "cullMode": 0,
+                "depthBiasClamp": 0.0,
+                "depthBiasConstantFactor": 0.0,
+                "depthBiasEnabled": false,
+                "depthBiasSlopeFactor": 0.0,
+                "depthBoundsTest": false,
+                "depthClamp": false,
+                "depthClearValue": 1.0,
+                "depthCompareOp": 3,
+                "depthEnabled": true,
+                "depthFormat": 126,
+                "depthTest": true,
+                "depthWrite": true,
+                "extentConfig": {
+                    "height": 2048,
+                    "type": 0,
+                    "width": 2048
+                },
+                "fragmentShaderPath": "shaders/deferred_offscreen.slang",
+                "frontFace": 1,
+                "inputAssembly": 3,
+                "lineWidth": 1.0,
+                "logicOp": 0,
+                "logicOpEnable": false,
+                "polygonMode": 0,
+                "primitiveRestart": false,
+                "rasterizationSamples": 0,
+                "rasterizerDiscard": false,
+                "sampleShading": false,
+                "stencilClearValue": 0,
+                "stencilTest": false,
+                "vertexShaderPath": "shaders/deferred_offscreen.slang"
+            },
+            "type": "pipeline"
+        },
+        {
+            "attachmentConfigs": [
+                {
+                    "clearValue": {
+                        "color": [
+                            0.10000000149011612,
+                            0.10000000149011612,
+                            0.5,
+                            1.0
+                        ]
+                    },
+                    "colorBlending": {
+                        "alphaBlendOp": 0,
+                        "blendEnable": false,
+                        "colorBlendOp": 0,
+                        "colorWriteMask": 15,
+                        "dstAlphaBlendFactor": 0,
+                        "dstColorBlendFactor": 7,
+                        "srcAlphaBlendFactor": 1,
+                        "srcColorBlendFactor": 6
+                    },
+                    "format": 37,
+                    "name": "color",
+                    "semantic": "SV_TARGET"
+                }
+            ],
+            "extraPins": [
+                {
+                    "id": 97,
+                    "label": "camera",
+                    "pinKind": "cameraInput",
+                    "type": 0
+                },
+                {
+                    "id": 76,
+                    "label": "lights",
+                    "pinKind": "lightInput",
+                    "type": 0
+                }
+            ],
+            "id": 14,
+            "inputPins": [
+                {
+                    "id": 0,
+                    "label": "",
+                    "type": 49093136
+                },
+                {
+                    "id": 0,
+                    "label": "",
+                    "type": 49093136
+                },
+                {
+                    "id": 17,
+                    "label": "samplerPosition",
+                    "type": 1
+                },
+                {
+                    "id": 18,
+                    "label": "samplerNormal",
+                    "type": 1
+                },
+                {
+                    "id": 19,
+                    "label": "samplerAlbedo",
+                    "type": 1
+                }
+            ],
+            "isMainPipeline": false,
+            "name": "main",
+            "outputPins": [
+                {
+                    "id": 20,
+                    "label": "color",
+                    "type": 1
+                }
+            ],
+            "position": [
+                760.0,
+                436.0
+            ],
+            "settings": {
+                "blendConstants": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "compiledFragmentShaderPath": "shaders/deferred_main.spv",
+                "compiledVertexShaderPath": "shaders/deferred_main.spv",
+                "cullMode": 0,
+                "depthBiasClamp": 0.0,
+                "depthBiasConstantFactor": 0.0,
+                "depthBiasEnabled": false,
+                "depthBiasSlopeFactor": 0.0,
+                "depthBoundsTest": false,
+                "depthClamp": false,
+                "depthClearValue": 1.0,
+                "depthCompareOp": 3,
+                "depthEnabled": true,
+                "depthFormat": 126,
+                "depthTest": true,
+                "depthWrite": true,
+                "extentConfig": {
+                    "height": 2048,
+                    "type": 0,
+                    "width": 2048
+                },
+                "fragmentShaderPath": "shaders/deferred_main.slang",
+                "frontFace": 1,
+                "inputAssembly": 3,
+                "lineWidth": 1.0,
+                "logicOp": 0,
+                "logicOpEnable": false,
+                "polygonMode": 0,
+                "primitiveRestart": false,
+                "rasterizationSamples": 0,
+                "rasterizerDiscard": false,
+                "sampleShading": false,
+                "stencilClearValue": 0,
+                "stencilTest": false,
+                "vertexShaderPath": "shaders/deferred_main.slang"
+            },
+            "type": "pipeline"
+        },
+        {
+            "id": 22,
+            "inputPins": [
+                {
+                    "id": 23,
+                    "label": "Presentation Image",
+                    "type": 1
+                }
+            ],
+            "name": "Present",
+            "position": [
+                1035.0,
+                477.0
+            ],
+            "type": "present"
+        },
+        {
+            "aspectRatio": 1.7777777910232544,
+            "cameraPosition": [
+                -4.012611389160156,
+                1.170606255531311,
+                -2.19568133354187
+            ],
+            "farPlane": 10000.0,
+            "fov": 36.25456237792969,
+            "id": 34,
+            "moveSpeed": 5.0,
+            "name": "FPS Camera",
+            "nearPlane": 0.10000000149011612,
+            "outputPins": [
+                {
+                    "id": 35,
+                    "label": "Camera",
+                    "type": 0
+                }
+            ],
+            "pitch": 0.06651579588651657,
+            "position": [
+                216.0,
+                272.0
+            ],
+            "rotateSpeed": 0.004999999888241291,
+            "target": [
+                0.6246170997619629,
+                1.502940058708191,
+                -0.35566258430480957
+            ],
+            "type": "fps_camera",
+            "up": [
+                0.08148066699504852,
+                0.996259868144989,
+                0.028761085122823715
+            ],
+            "yaw": -5.090127468109131
+        },
+        {
+            "id": 60,
+            "lights": [
+                {
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "position": [
+                        0.0,
+                        12.0,
+                        0.0
+                    ],
+                    "radius": 80.0
+                },
+                {
+                    "color": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    "position": [
+                        -8.0,
+                        8.0,
+                        0.0
+                    ],
+                    "radius": 20.0
+                },
+                {
+                    "color": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "position": [
+                        8.0,
+                        8.0,
+                        0.0
+                    ],
+                    "radius": 20.0
+                },
+                {
+                    "color": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "position": [
+                        0.0,
+                        5.0,
+                        -7.0
+                    ],
+                    "radius": 50.0
+                },
+                {
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "radius": 40.0
+                },
+                {
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "position": [
+                        0.0,
+                        12.0,
+                        0.0
+                    ],
+                    "radius": 5.0
+                }
+            ],
+            "name": "Lights",
+            "numLights": 6,
+            "outputPins": [
+                {
+                    "id": 61,
+                    "label": "light",
+                    "type": 0
+                }
+            ],
+            "position": [
+                584.0,
+                448.0
+            ],
+            "shaderControlledCount": true,
+            "type": "light"
+        }
+    ]
+}

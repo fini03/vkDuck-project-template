@@ -1,0 +1,468 @@
+{
+    "links": [
+        {
+            "endPin": 17,
+            "id": 29,
+            "startPin": 10
+        },
+        {
+            "endPin": 7,
+            "id": 32,
+            "startPin": 15
+        },
+        {
+            "endPin": 14,
+            "id": 35,
+            "startPin": 21
+        },
+        {
+            "endPin": 8,
+            "id": 36,
+            "startPin": 21
+        },
+        {
+            "endPin": 13,
+            "id": 37,
+            "startPin": 19
+        },
+        {
+            "endPin": 6,
+            "id": 38,
+            "startPin": 19
+        },
+        {
+            "endPin": 9,
+            "id": 39,
+            "startPin": 22
+        },
+        {
+            "endPin": 46,
+            "id": 87,
+            "startPin": 58
+        },
+        {
+            "endPin": 41,
+            "id": 88,
+            "startPin": 58
+        },
+        {
+            "endPin": 45,
+            "id": 89,
+            "startPin": 28
+        },
+        {
+            "endPin": 168,
+            "id": 184,
+            "startPin": 161
+        }
+    ],
+    "nodes": [
+        {
+            "attachmentConfigs": [
+                {
+                    "clearValue": {
+                        "depth": 1.0,
+                        "stencil": 0
+                    },
+                    "colorBlending": {
+                        "alphaBlendOp": 0,
+                        "blendEnable": false,
+                        "colorBlendOp": 0,
+                        "colorWriteMask": 15,
+                        "dstAlphaBlendFactor": 0,
+                        "dstColorBlendFactor": 7,
+                        "srcAlphaBlendFactor": 1,
+                        "srcColorBlendFactor": 6
+                    },
+                    "format": 126,
+                    "name": "depth",
+                    "semantic": "SV_DEPTH"
+                }
+            ],
+            "extraPins": [
+                {
+                    "id": 41,
+                    "label": "Vertex data",
+                    "pinKind": "vertexData",
+                    "type": 2
+                }
+            ],
+            "id": 1,
+            "inputPins": [
+                {
+                    "id": 13,
+                    "label": "lightViewProj",
+                    "type": 0
+                },
+                {
+                    "id": 14,
+                    "label": "modelMatrices",
+                    "type": 0
+                }
+            ],
+            "isMainPipeline": false,
+            "name": "shadow",
+            "outputPins": [
+                {
+                    "id": 15,
+                    "label": "depth",
+                    "type": 1
+                }
+            ],
+            "position": [
+                472.0,
+                405.0
+            ],
+            "settings": {
+                "blendConstants": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "compiledFragmentShaderPath": "shaders/shadow_offscreen.spv",
+                "compiledVertexShaderPath": "shaders/shadow_offscreen.spv",
+                "cullMode": 2,
+                "depthBiasClamp": 0.0,
+                "depthBiasConstantFactor": 1.25,
+                "depthBiasEnabled": true,
+                "depthBiasSlopeFactor": 1.75,
+                "depthBoundsTest": false,
+                "depthClamp": false,
+                "depthClearValue": 1.0,
+                "depthCompareOp": 3,
+                "depthEnabled": false,
+                "depthFormat": 126,
+                "depthTest": true,
+                "depthWrite": true,
+                "extentConfig": {
+                    "height": 2048,
+                    "type": 1,
+                    "width": 2048
+                },
+                "fragmentShaderPath": "shaders/shadow_offscreen.slang",
+                "frontFace": 1,
+                "inputAssembly": 3,
+                "lineWidth": 1.0,
+                "logicOp": 0,
+                "logicOpEnable": false,
+                "polygonMode": 0,
+                "primitiveRestart": false,
+                "rasterizationSamples": 0,
+                "rasterizerDiscard": false,
+                "sampleShading": false,
+                "stencilClearValue": 0,
+                "stencilTest": false,
+                "vertexShaderPath": "shaders/shadow_offscreen.slang"
+            },
+            "type": "pipeline"
+        },
+        {
+            "attachmentConfigs": [
+                {
+                    "clearValue": {
+                        "color": [
+                            0.10000000149011612,
+                            0.10000000149011612,
+                            0.5,
+                            1.0
+                        ]
+                    },
+                    "colorBlending": {
+                        "alphaBlendOp": 0,
+                        "blendEnable": false,
+                        "colorBlendOp": 0,
+                        "colorWriteMask": 15,
+                        "dstAlphaBlendFactor": 0,
+                        "dstColorBlendFactor": 7,
+                        "srcAlphaBlendFactor": 1,
+                        "srcColorBlendFactor": 6
+                    },
+                    "format": 37,
+                    "name": "color",
+                    "semantic": "SV_TARGET"
+                }
+            ],
+            "extraPins": [
+                {
+                    "id": 46,
+                    "label": "Vertex data",
+                    "pinKind": "vertexData",
+                    "type": 2
+                },
+                {
+                    "id": 168,
+                    "label": "camera",
+                    "pinKind": "cameraInput",
+                    "type": 0
+                },
+                {
+                    "id": 45,
+                    "label": "lights",
+                    "pinKind": "lightInput",
+                    "type": 0
+                }
+            ],
+            "id": 2,
+            "inputPins": [
+                {
+                    "id": 0,
+                    "label": "",
+                    "type": 1634692198
+                },
+                {
+                    "id": 6,
+                    "label": "lightViewProj",
+                    "type": 0
+                },
+                {
+                    "id": 0,
+                    "label": "",
+                    "type": 1634692198
+                },
+                {
+                    "id": 7,
+                    "label": "shadowMap",
+                    "type": 1
+                },
+                {
+                    "id": 8,
+                    "label": "modelMatrices",
+                    "type": 0
+                },
+                {
+                    "id": 9,
+                    "label": "albedoTexture",
+                    "type": 1
+                }
+            ],
+            "isMainPipeline": false,
+            "name": "main",
+            "outputPins": [
+                {
+                    "id": 10,
+                    "label": "color",
+                    "type": 1
+                }
+            ],
+            "position": [
+                809.0,
+                560.0
+            ],
+            "settings": {
+                "blendConstants": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "compiledFragmentShaderPath": "shaders/shadow_main.spv",
+                "compiledVertexShaderPath": "shaders/shadow_main.spv",
+                "cullMode": 1,
+                "depthBiasClamp": 0.0,
+                "depthBiasConstantFactor": 0.0,
+                "depthBiasEnabled": false,
+                "depthBiasSlopeFactor": 0.0,
+                "depthBoundsTest": false,
+                "depthClamp": false,
+                "depthClearValue": 1.0,
+                "depthCompareOp": 3,
+                "depthEnabled": true,
+                "depthFormat": 126,
+                "depthTest": true,
+                "depthWrite": true,
+                "extentConfig": {
+                    "height": 2048,
+                    "type": 0,
+                    "width": 2048
+                },
+                "fragmentShaderPath": "shaders/shadow_main.slang",
+                "frontFace": 1,
+                "inputAssembly": 3,
+                "lineWidth": 1.0,
+                "logicOp": 0,
+                "logicOpEnable": false,
+                "polygonMode": 0,
+                "primitiveRestart": false,
+                "rasterizationSamples": 0,
+                "rasterizerDiscard": false,
+                "sampleShading": false,
+                "stencilClearValue": 0,
+                "stencilTest": false,
+                "vertexShaderPath": "shaders/shadow_main.slang"
+            },
+            "type": "pipeline"
+        },
+        {
+            "id": 16,
+            "inputPins": [
+                {
+                    "id": 17,
+                    "label": "Presentation Image",
+                    "type": 1
+                }
+            ],
+            "name": "Present",
+            "position": [
+                1048.0,
+                514.0
+            ],
+            "type": "present"
+        },
+        {
+            "aspectRatio": 1.7777777910232544,
+            "cameraPosition": [
+                3.3350000381469727,
+                3.765000104904175,
+                -2.5810000896453857
+            ],
+            "farPlane": 20.0,
+            "fov": 45.0,
+            "id": 18,
+            "name": "light projection",
+            "nearPlane": 1.0,
+            "outputPins": [
+                {
+                    "id": 19,
+                    "label": "Camera",
+                    "type": 0
+                }
+            ],
+            "position": [
+                104.0,
+                692.0
+            ],
+            "target": [
+                0.1599999964237213,
+                0.765999972820282,
+                -0.1469999998807907
+            ],
+            "type": "fixed_camera",
+            "up": [
+                0.0,
+                1.0,
+                0.0
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Model",
+            "outputPins": [
+                {
+                    "id": 21,
+                    "label": "Model matrix",
+                    "type": 0
+                },
+                {
+                    "id": 22,
+                    "label": "Image",
+                    "type": 1
+                },
+                {
+                    "id": 58,
+                    "label": "Vertex data",
+                    "type": 2
+                },
+                {
+                    "id": 59,
+                    "label": "Camera",
+                    "type": 0
+                }
+            ],
+            "position": [
+                96.0,
+                545.0
+            ],
+            "selectedCameraIndex": -1,
+            "settings": {
+                "modelPath": "data/models/ducko.gltf",
+                "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "primitiveRestart": false,
+                "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ],
+                "topology": 3
+            },
+            "type": "model"
+        },
+        {
+            "id": 27,
+            "lights": [
+                {
+                    "color": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "position": [
+                        3.3350000381469727,
+                        3.765000104904175,
+                        -2.5810000896453857
+                    ],
+                    "radius": 5.0
+                }
+            ],
+            "name": "Lights",
+            "numLights": 1,
+            "outputPins": [
+                {
+                    "id": 28,
+                    "label": "light",
+                    "type": 0
+                }
+            ],
+            "position": [
+                472.0,
+                256.0
+            ],
+            "shaderControlledCount": true,
+            "type": "light"
+        },
+        {
+            "aspectRatio": 1.7777777910232544,
+            "cameraPosition": [
+                4.433000087738037,
+                2.8570001125335693,
+                1.4240000247955322
+            ],
+            "farPlane": 1000.0,
+            "fov": 45.0,
+            "id": 160,
+            "name": "quack camera",
+            "nearPlane": 0.10000000149011612,
+            "outputPins": [
+                {
+                    "id": 161,
+                    "label": "Camera",
+                    "type": 0
+                }
+            ],
+            "position": [
+                664.0,
+                224.0
+            ],
+            "target": [
+                0.1420000046491623,
+                0.6230000257492065,
+                0.16300000250339508
+            ],
+            "type": "fixed_camera",
+            "up": [
+                0.0,
+                1.0,
+                0.0
+            ]
+        }
+    ]
+}
