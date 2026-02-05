@@ -30,8 +30,7 @@ vkDuck_dep = declare_dependency(
 # Source files (project-specific generated code)
 sources = files(
   'src/main.cpp',
-  'generated_files/primitives.cpp',
-  'generated_files/camera_instances.cpp'
+  'generated_files/primitives.cpp'
 )
 
 # Include directories

@@ -5,13 +5,11 @@
 .cache
 /.vscode/*
 /subprojects/imgui
-/subprojects/inja
 /subprojects/imgui-node-editor
 /subprojects/packagecache
 /subprojects/shader-slang-*/
 /subprojects/shader-slang-*.wrap
 /subprojects/vulkan-memory-allocator/
-/subprojects/efsw/
 .gdb_history
 .gdbinit
 
@@ -25,10 +23,8 @@
 /logs/*
 /compiled_shaders/*
 /generated_files/*
-/compiled_shaders/*
 /subprojects/imgui
 /subprojects/vkDuck
-/subprojects/inja
 /subprojects/imgui-node-editor
 /subprojects/packagecache
 /subprojects/vulkan-memory-allocator
