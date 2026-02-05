@@ -15,6 +15,9 @@
 .gdb_history
 .gdbinit
 
+/include
+/lib
+
 /imgui.ini
 /icd.d/*
 /explicit_layer.d/*
