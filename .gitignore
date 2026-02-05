@@ -45,5 +45,5 @@
 !/data/images/default.png
 /data/meshes/*
 
-/saved_state/*
-!/saved_state/.gitkeep
+/saved_states/*
+!/saved_states/.gitkeep
