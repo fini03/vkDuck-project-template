@@ -2,14 +2,6 @@
 
 A Vulkan-based graphics rendering template built on the vkDuck library. This template provides a starting point for learning and developing Vulkan applications with modern rendering techniques.
 
-## Features
-
-- **Phong Lighting** - Ambient, diffuse, and specular lighting with texture support
-- **Shadow Mapping** - Depth-based shadow calculation with configurable bias
-- **Deferred Rendering** - G-Buffer pipeline supporting up to 6 dynamic lights
-- **FPS Camera** - Mouse and keyboard controlled camera with configurable movement
-- **Scene Configuration** - JSON-based scene definitions for rapid iteration
-
 ## Prerequisites
 
 - Vulkan SDK
@@ -40,33 +32,14 @@ meson compile -C build
 │   ├── primitives.h/cpp   # Drawable object management
 │   └── camera_instances.cpp
 ├── shaders/               # Slang shader sources
-├── compiled_shaders/      # Pre-compiled SPIR-V binaries
+├── compiled_shaders/      # compiled SPIR-V binaries
 ├── data/
-│   ├── models/           # 3D models (glTF, FBX, USD)
+│   ├── models/           # 3D models (glTF)
 │   └── textures/         # Texture assets
 ├── saved_states/         # Scene configuration files
 ├── include/              # vkDuck library headers
 └── lib/                  # Pre-compiled vkDuck library
 ```
-
-## Shaders
-
-Shaders are written in Slang (HLSL-like syntax) and compiled to SPIR-V. Available shader sets:
-
-| Shader Set | Description |
-|------------|-------------|
-| `default_phong_*` | Basic Phong lighting |
-| `shadow_*` | Shadow mapping implementation |
-| `deferred_*` | Deferred rendering pipeline |
-
-## Scene Configurations
-
-Pre-configured scenes in `saved_states/`:
-
-- `triangle.json` - Minimal triangle example
-- `duck-camera-light.json` - Duck model with lighting
-- `deferred_scene.json` - Deferred rendering demo
-- `shadow_state.json` - Shadow mapping demo
 
 ## Dependencies
 
